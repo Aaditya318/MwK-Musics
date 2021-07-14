@@ -70,4 +70,4 @@ python3 main.py
 ```
 #### Support
 
-Connect Me On [Telegram](https://telegram.dog/shamilnelli)
+Connect Me On [Telegram](https://telegram.dog/tobot_update)
