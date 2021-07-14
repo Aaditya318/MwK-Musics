@@ -52,7 +52,7 @@ HELP = """
 • `/update` __Update Current Settings n Restarts the Bot__
 
 © Powered By 
-[ __@mwklinks | @redbullfed__ ]
+[ __@tobot_update | @tobotupdate__ ]
 """
 
 
@@ -80,7 +80,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton("Pause", callback_data="ps")
                         ],[
                             InlineKeyboardButton("Skip", callback_data="sk"),
-                            InlineKeyboardButton("Musics", url="https://t.me/mwksongs")
+                            InlineKeyboardButton("🤖More bot", url="https://t.me/tobot_list")
                         ]
                     ]
                 )
@@ -103,7 +103,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton("Resume", callback_data="rs")
                         ],[
                             InlineKeyboardButton("Skip", callback_data="sk"),
-                            InlineKeyboardButton("Musics", url='https://t.me/mwksongs')
+                            InlineKeyboardButton("🤖 more bot", url='https://t.me/tobot_list')
                         ],
                     ]
                 )
@@ -127,7 +127,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton("Pause", callback_data="ps")
                         ],[
                             InlineKeyboardButton("Skip", callback_data="sk"),
-                            InlineKeyboardButton("Musics", url="https://t.me/mwksongs") 
+                            InlineKeyboardButton("🤖 More bot", url="https://t.me/tobot_list") 
                         ],
                     ]
                 )
@@ -151,7 +151,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton("Pause", callback_data="ps")
                         ],[
                             InlineKeyboardButton("Skip", callback_data="sk"),
-                            InlineKeyboardButton("Musics", url="https://t.me/mwksongs")
+                            InlineKeyboardButton("🤖 more bot", url="https://t.me/tobot_list")
                             
                     ],
                 ]
@@ -162,13 +162,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton('📢 Updates', url='https://t.me/mwklinks'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/redbullfed')
+                InlineKeyboardButton('📢 Updates', url='https://t.me/tobot_update'),
+                InlineKeyboardButton('💬 Support', url='https://t.me/tobotupdate')
                 ],[
-                InlineKeyboardButton('🤖 Developer', url='https://t.me/shamilnelli'),
-                InlineKeyboardButton('🎧 Songs', url='https://t.me/mwksongs')
-                ],[
-                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/shamilhabeebnelli/mwk-musics'),
+                InlineKeyboardButton('👨‍💻 Developer', url='https://t.me/bot_devloaper'),
+                InlineKeyboardButton('🤖 more bot', url='https://t.me/tobot_list')
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
